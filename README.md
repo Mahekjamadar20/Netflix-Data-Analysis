@@ -56,9 +56,3 @@ cleaning, feature engineering and visualizations
 Mahek Jamadar
 LinkedIn — www.linkedin.com/in/mahek-jamadar-
 GitHub — github.com/Mahekjamadar20
-4. Run all cells
-
-## Author
-Mahek Jamadar
-LinkedIn — www.linkedin.com/in/mahek-jamadar-
-GitHub — github.com/Mahekjamadar20
