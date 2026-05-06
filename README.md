@@ -1,12 +1,13 @@
-# Netflix Data Analysis — EDA Project
+# Netflix Movies — EDA Project
 
 ## About This Project
-Comprehensive Exploratory Data Analysis on Netflix dataset 
-of 8,800+ titles across 190+ countries using Python.
+Exploratory Data Analysis on a Netflix-related movies dataset
+of 9,800+ titles using Python. Goal was to understand content
+trends, genre popularity, and voting patterns.
 
 ## Objective
-To uncover content trends, genre patterns, and regional 
-distribution to support data-driven content strategy decisions.
+To uncover patterns in movie popularity, genres, and release
+trends to support data-driven content decisions.
 
 ## Tools Used
 - Python
@@ -17,29 +18,44 @@ distribution to support data-driven content strategy decisions.
 - Jupyter Notebook
 
 ## Dataset
-- Source — Kaggle
-- Rows — 8,800+ titles
-- Columns — 12
-- Link — https://www.kaggle.com/datasets/shivamb/netflix-shows
+- Source — Kaggle (TMDB Netflix Movies Dataset)
+- Rows — 9,827 titles
+- Columns — Release_Date, Title, Popularity, Vote_Count,
+  Vote_Average, Genre, Overview, Original_Language, Poster_Url
+
+## Data Cleaning & Feature Engineering
+- Converted Release_Date from string to datetime,
+  extracted year
+- Dropped unnecessary columns — Overview,
+  Original_Language, Poster_Url
+- Categorized Vote_Average into 4 groups using pd.cut()
+  → not_popular, below_avg, average, popular
+- Removed null values using dropna()
+- Checked and confirmed 0 duplicate records
 
 ## Key Findings
--  Netflix shifted ~70% toward TV Shows after 2015
--  USA is #1 content producer — India is #2
--  TV-MA is most common rating — adult focused content
--  Top genres — International Movies and Dramas
--  Content grew rapidly 2016 to 2019
--  Slowed post 2020 — COVID production impact
--  January and July have highest content additions
+-  Action and Drama are the most popular genres
+-  Majority of titles fall in average or below_avg
+  rating category
+-  Popularity scores vary widely — few titles
+  dominate with very high scores
+-  Most content released between 2018 to 2022
 
 ## Project Structure
-netflix analysis.ipynb — Complete EDA notebook with 
-cleaning, analysis and visualizations
+netflix analysis.ipynb — Complete EDA notebook with
+cleaning, feature engineering and visualizations
 
 ## How To Run
 1. Clone this repo
 2. Install libraries
    pip install pandas numpy matplotlib seaborn
 3. Open netflix analysis.ipynb in Jupyter Notebook
+4. Run all cells
+
+## Author
+Mahek Jamadar
+LinkedIn — www.linkedin.com/in/mahek-jamadar-
+GitHub — github.com/Mahekjamadar20
 4. Run all cells
 
 ## Author
